@@ -25,6 +25,7 @@
                     </div>
                 </div>
                 <hr>
+                Код сниппета
                 <div class="row">
                     <div class="col">
                         <div class="p-2 h-100" style="border:1px solid #ced4da; border-radius:5px;">
@@ -36,6 +37,17 @@
                 
                     </div>
                 </div>
+                <hr>
+                Публичный / Приватный
+                <div class="row">
+                    <div class="col">
+                        <div class="p-2 h-100" style="border:1px solid #ced4da; border-radius:5px;">
+                            <input type='checkbox' name='public' value="True"
+                            {% if snippet.public %} checked {% endif %}>                   
+                        </div>
+                
+                    </div>
+                </div> 
                 </fieldset>
             {% elif type == 'edit' %}
                <form action="" method='post'>
@@ -63,6 +75,17 @@
                     
                         </div>
                     </div>  
+                    <div class="row">
+                        <div class="col">
+                            <div class="p-2 h-100" style="border:1px solid #ced4da; border-radius:5px;">
+                                <input type='checkbox' name='public' value="True"
+                                {% if snippet.public %} checked {% endif %}>                   
+                            </div>
+                    
+                        </div>
+                    </div> 
+
+
                     <button type="submit"> Обновить </button> 
                </form> 
 

@@ -13,14 +13,14 @@
 
         <div class="row">
             <div class="col">
-                <form action="" method="post">
+                <form action="{% url 'register' %}" method="post">
                     {% csrf_token %}
 
                     {{ form.as_p }}
 
                     <div class="form-group row">
                         <div class="col-8">
-                            <input type="submit" class="btn btn-primary btn-block" value="Сохранить">
+                            <input type="submit" class="btn btn-primary btn-block" value="Создать пользователя">
                         </div>
                     </div>
                 </form>
